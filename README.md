@@ -4,6 +4,9 @@ A game engine written from scratch in Rust (on [Bevy](https://bevyengine.org)) t
 copy** of Grand Theft Auto IV and plays it: the city, traffic, pedestrians, Niko on foot and in
 cars, weapons, sound, time of day.
 
+**Video:** [GTA IV Rewrite: Liberty is out now!](https://youtu.be/d43K29HQlKA)  
+**Guide** (what works, what doesn't, every setting): <https://claude.ai/artifact/Jmi7JCht5WpYG3h6nXiD3k>
+
 This repository contains **no game files**. No models, textures, sounds, scripts, executables or
 encryption keys from the game are included, and none are needed to build it. To run it you need a
 legitimately owned copy of GTA IV installed on your PC; Liberty reads that install, read-only, at
