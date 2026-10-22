@@ -1,0 +1,9 @@
+[package]
+name = "phys"
+description = "Liberty's own physics: articulated bodies (ragdolls) in joint coordinates, with contacts."
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[dependencies]
+glam = "0.29"

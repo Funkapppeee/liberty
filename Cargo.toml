@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+publish = false
+
+[workspace.dependencies]
+rage = { path = "crates/rage" }
+anyhow = "1"
+
+# Dependencies build optimised even in dev builds: decompression and texture decoding are
+# painfully slow unoptimised, and they rarely change.
+# Our own crates too: the car physics and collision queries are hot loops.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 2

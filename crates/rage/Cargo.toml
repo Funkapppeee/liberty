@@ -1,0 +1,12 @@
+[package]
+name = "rage"
+description = "Readers for GTA IV (RAGE engine) file formats: encrypted IMG archives, RSC5 resources, textures, models."
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+aes = "0.8"
+sha1 = "0.10"
+flate2 = "1"

@@ -1,0 +1,5 @@
+# Anything extracted from the game stays local — never commit or ship it.
+/out/
+/target/
+__pycache__/
+/tools/

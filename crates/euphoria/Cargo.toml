@@ -1,0 +1,8 @@
+[package]
+name = "euphoria"
+description = "Clean-room Euphoria behaviours (from specs/euphoria/), written without the game's code."
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[dependencies]

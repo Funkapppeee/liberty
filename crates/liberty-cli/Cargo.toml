@@ -1,0 +1,16 @@
+[package]
+name = "liberty-cli"
+description = "Dev tool: poke at GTA IV files through the rage crate."
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "liberty"
+path = "src/main.rs"
+
+[dependencies]
+rage.workspace = true
+anyhow.workspace = true
+texture2ddecoder = "0.1"
+image = { version = "0.25", default-features = false, features = ["png"] }

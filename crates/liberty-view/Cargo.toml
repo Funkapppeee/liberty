@@ -1,0 +1,20 @@
+[package]
+name = "liberty-view"
+description = "3D viewer: GTA IV models from the user's install, drawn in our own Bevy renderer."
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[dependencies]
+rage.workspace = true
+euphoria = { path = "../euphoria" }
+anyhow.workspace = true
+# Pinned to 0.16 on purpose (known API); upgrade to current Bevy once the pipeline settles.
+# pbr_specular_textures: the specular tint map (GTA's spec maps); wav: playing the mixed sounds
+bevy = { version = "0.16", features = ["pbr_specular_textures", "wav"] }
+phys = { path = "../phys" }
+# decoding the radar tiles and HUD art on the CPU
+texture2ddecoder = "0.1"
+# the dev panel (devui.rs); 0.36 is the last release on Bevy 0.16. tracing: its console log layer
+tracing = "0.1"
+bevy_egui = { version = "0.36", default-features = false, features = ["render", "default_fonts"] }
